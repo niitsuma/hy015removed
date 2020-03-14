@@ -5,7 +5,7 @@ from setuptools import find_packages, setup
 
 setup(
     name='hy015removed',
-    version='0.1',
+    version='0.1.1',
     description='hy015removed : compat functions removed in hy-lang ver0.15 for hy 0.18 ',
     url='https://github.com/niitsuma/hy015removed/',
     author='Hirotaka Niitsuma',

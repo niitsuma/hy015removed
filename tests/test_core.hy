@@ -44,7 +44,7 @@
 
   (eq_
     (dfor
-      x (range 10) [ x (+ 1 x)] )
+      x (range 10)   [ x (+ 1 x) ] )
     (dict-comp
       [ x (+ 1 x)]  [x (range 10) ]   )
     )
@@ -55,6 +55,12 @@
     (dict-comp
      [ x (+ 1 x)]  [x (range 10) ]  (= (% x 2)  1) )
     )
+
+  (assert-all-equal
+    (apply (fn [x y] (+ x y)) [3 4]  )
+    (apply (fn [x y] (+ x y)) '(3 4) )
+    (apply (fn [x y] (+ x y)) (, 3 4) )
+    7)
   
 
   

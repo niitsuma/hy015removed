@@ -12,3 +12,4 @@ compat functions removed in hy-lang ver0.15 for hy 0.18
 - list-comp 
 - set-comp 
 - dict-comp 
+- funcall

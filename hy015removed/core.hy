@@ -27,7 +27,6 @@
        ~el
        )))
 
-
 (defmacro dict-comp [el lis &optional test]
   (lif-not
     test
@@ -41,3 +40,8 @@
        :if ~test       
        ~el
        )))
+
+
+(defmacro apply [f arg]
+  `(~f #*~arg)
+  )
